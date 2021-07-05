@@ -1,0 +1,42 @@
+input
+{
+    border-radius: 2px;
+    padding: 10px 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+    
+    
+    
+    
+}
+
+label
+{
+    color: #000099
+
+    ;
+    font-weight: 500;
+    font-size: larger;
+    
+
+}
+
+.buttonulozit
+  {
+      padding: 10px 14px;
+      background-color: #00ff00;
+      font-weight: 700;
+      border-radius: 10px;
+      border:2px solid black;
+      text-align: center;
+      margin-top: 8px;
+  }
+
+  .buttonulozit:hover {
+    background-color: #009900; 
+    
+  }
+  .Formular
+  {
+      display: none;
+  }

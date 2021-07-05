@@ -2,7 +2,8 @@
 import React from 'react';
 import { Form, Button, Col, Container, FormGroup } from 'react-bootstrap';
 import SaveDataPole from './PoleProUlozeni';
-import SedmDni from './sedm_dni';
+import Forms from './Formulář_Jidelnicku';
+
 import "./jidelnicek.css"
 
 
@@ -38,7 +39,7 @@ class Btn extends React.Component
      if(Save[1] == 7)
     {
       
-      
+      sedm[0].style.display = "block";
     
     
     }
@@ -174,7 +175,7 @@ class Btn extends React.Component
             </div>
             
          
-            
+            <Forms/>
           </Form>
           
           </Col>
