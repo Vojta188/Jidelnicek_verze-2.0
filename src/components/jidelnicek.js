@@ -1,9 +1,18 @@
-import Nastaveni_aplikace from './nastaveni_aplikace';
+
 import React from 'react';
 import { Form, Button, Col, Container, FormGroup } from 'react-bootstrap';
+import SaveDataPole from './PoleProUlozeni';
+import SedmDni from './sedm_dni';
+import "./jidelnicek.css"
 
 
-Nastaveni_aplikace.saveData;
+let Save = SaveDataPole;
+var sedm = document.getElementsByClassName("sedm")
+var ctrnact = document.getElementsByClassName("ctrnact")
+var dvacetjedna = document.getElementsByClassName("dvacetjedna")
+var dvacetosm = document.getElementsByClassName("dvacetosm")
+
+
 
 class Btn extends React.Component
 {
@@ -12,116 +21,165 @@ class Btn extends React.Component
     
     super(props)
     this.state = {
-      snidane: '',
-      dopoledni_svacina:'',
-      obed:'',
-      odpoledni_svacina:'',
-      vecere: '',
-      druha_vecere: ''
+      
     }
+    
   }
+
+
+  
+
+ 
+
+
   button_pocet_dni()
   {
-    if(SaveDataPole[1] == 7)
+    
+     if(Save[1] == 7)
     {
-      return(
-        <FormGroup>
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      </FormGroup>
-
-      )
+      
+      
+    
+    
+    }
+    
+    
+       if(Save[1] == 14)
+    {
+      ctrnact[0].style.display = "block";
+      
+      
     }
 
 
-
-    if(SaveDataPole[1] == 14)
+    if(Save[1] == 21)
     {
-      return(
-        <FormGroup>
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      </FormGroup>
-
-      )
+      dvacetjedna[0].style.display = "block";
     }
 
 
-    if(SaveDataPole[1] == 28)
+    if(Save[1] == 28)
     {
-      return(
-        <FormGroup>
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      </FormGroup>
-
-      )
+      dvacetosm[0].style.display = "block";
     }
+   
+    
 
 
-      alert(SaveDataPole)
+ 
 
-  }
-
+    }
+    
+    
 
   render()
+  
   {
-    return(<div>
+    return(  <div className = "form">
       <Container className = "container" fluid="sm">
           
           <Col>
           
-          <Form>
-            <Button onClick = {this.button_pocet_dni}>Načíst dny</Button>
+          <Form className = "Form">
+            <Button onClick = {this.button_pocet_dni}>Načíst program</Button>
             <button_pocet_dni/>
+            <div id="sedm" className = "sedm"   >
+              <FormGroup>
+              <button className = "button">1.den</button>{' '}
+              <button className = "button">2.den</button>{' '}
+              <button className = "button">3.den</button>{' '}
+              <button className = "button">4.den</button>{' '}
+              <button className = "button">5.den</button>{' '}
+              <button className = "button">6.den</button>{' '}
+              <button className = "button">7.den</button>{' '}
+              </FormGroup>
+            </div>
+
+            <div id="ctrnact" className = "ctrnact"   >
+              <FormGroup>
+              <button className = "button">1.den</button>{' '}
+              <button className = "button">2.den</button>{' '}
+              <button className = "button">3.den</button>{' '}
+              <button className = "button">4.den</button>{' '}
+              <button className = "button">5.den</button>{' '}
+              <button className = "button">6.den</button>{' '}
+              <button className = "button">7.den</button>{' '}
+              <button className = "button">8.den</button>{' '}
+              <button className = "button">9.den</button>{' '}
+              <button className = "button">10.den</button>{' '}
+              <button className = "button">11.den</button>{' '}
+              <button className = "button">12.den</button>{' '}
+              <button className = "button">13.den</button>{' '}
+              <button className = "button">14.den</button>{' '}
+              
+              
+              </FormGroup>
+            </div>
+            
+            <div id="dvacetjedna" className = "dvacetjedna"   >
+              <FormGroup>
+              <button className = "button">1.den</button>{' '}
+              <button className = "button">2.den</button>{' '}
+              <button className = "button">3.den</button>{' '}
+              <button className = "button">4.den</button>{' '}
+              <button className = "button">5.den</button>{' '}
+              <button className = "button">6.den</button>{' '}
+              <button className = "button">7.den</button>{' '}
+              <button className = "button">8.den</button>{' '}
+              <button className = "button">9.den</button>{' '}
+              <button className = "button">10.den</button>{' '}
+              <button className = "button">11.den</button>{' '}
+              <button className = "button">12.den</button>{' '}
+              <button className = "button">13.den</button>{' '}
+              <button className = "button">14.den</button>{' '}
+              <button className = "button">15.den</button>{' '}
+              <button className = "button">16.den</button>{' '}
+              <button className = "button">17.den</button>{' '}
+              <button className = "button">18.den</button>{' '}
+              <button className = "button">19.den</button>{' '}
+              <button className = "button">20.den</button>{' '}
+              <button className = "button">21.den</button>{' '}
+              </FormGroup>
+            </div>
+
+            <div id="dvacetosm" className = "dvacetosm"   >
+            <button className = "button">1.den</button>{' '}
+              <button className = "button">2.den</button>{' '}
+              <button className = "button">3.den</button>{' '}
+              <button className = "button">4.den</button>{' '}
+              <button className = "button">5.den</button>{' '}
+              <button className = "button">6.den</button>{' '}
+              <button className = "button">7.den</button>{' '}
+              <button className = "button">8.den</button>{' '}
+              <button className = "button">9.den</button>{' '}
+              <button className = "button">10.den</button>{' '}
+              <button className = "button">11.den</button>{' '}
+              <button className = "button">12.den</button>{' '}
+              <button className = "button">13.den</button>{' '}
+              <button className = "button">14.den</button>{' '}
+              <button className = "button">15.den</button>{' '}
+              <button className = "button">16.den</button>{' '}
+              <button className = "button">17.den</button>{' '}
+              <button className = "button">18.den</button>{' '}
+              <button className = "button">19.den</button>{' '}
+              <button className = "button">20.den</button>{' '}
+              <button className = "button">21.den</button>{' '}
+              <button className = "button">22.den</button>{' '}
+              <button className = "button">23.den</button>{' '}
+              <button className = "button">24.den</button>{' '}
+              <button className = "button">25.den</button>{' '}
+              <button className = "button">26.den</button>{' '}
+              <button className = "button">27.den</button>{' '}
+              <button className = "button">28.den</button>{' '}
+            </div>
+            
+         
             
           </Form>
           
           </Col>
           
+            
           </Container>
           </div>
 

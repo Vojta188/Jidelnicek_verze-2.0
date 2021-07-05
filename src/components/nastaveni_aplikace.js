@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button, FormGroup } from 'react-bootstrap';
 import './jidelnicek.css';
+import SaveDataPole from './PoleProUlozeni';
 
 
-  const SaveDataPole = [];
+  
 
 
 
@@ -59,7 +60,12 @@ ChangePocet_dni(value){
   });
 }
 
-
+zobrazit_udaje()
+{
+  document.getElementById("jmeno").innerHTML = SaveDataPole[0];
+  document.getElementById("vaha").innerHTML = SaveDataPole[2];
+  document.getElementById("vyska").innerHTML = SaveDataPole[3];
+}
 
   onSubmitSaveData(e)
   {
@@ -76,7 +82,7 @@ ChangePocet_dni(value){
   }
   if(this.state.pocet_dni.length>0)
   {
-    SaveDataPole.push("Počet dní " + this.state.pocet_dni)
+    SaveDataPole.push(this.state.pocet_dni)
   }
   if(this.state.vaha.length > 0)
   {
@@ -102,9 +108,10 @@ ChangePocet_dni(value){
 
 render()
 {
+  
     
     return( <div>
-      <p>{SaveDataPole[0]}</p>
+      <p></p>
          <Container className = "container" fluid="sm">
   <Row>
     <Col>
@@ -114,12 +121,12 @@ render()
     <Form.Control onChange={e => this.ChangeJmeno(e.target.value)} type="text" placeholder="Jméno..." value = {this.state.jmeno}  />
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlSelect1">
-    <Form.Label>Example select</Form.Label>
+    <Form.Label>Vyberte program</Form.Label>
     <Form.Control as="select" value = {this.state.pocet_dni} onChange={e => this.ChangePocet_dni(e.target.value)}>
-      <option>7 denní</option>
-      <option>14 denní</option>
-      <option>21 denní</option>
-      <option>28 denní</option>
+      <option type = "number">7</option>
+      <option type = "number">14</option>
+      <option type = "number">21</option>
+      <option type = "number">28</option>
       
     </Form.Control>
   </Form.Group>
@@ -138,9 +145,12 @@ render()
 
 
 <FormGroup>
-<Button type="submit" value="Submit" > Uložit</Button>
+<Button type="submit" value="Submit" > Uložit</Button> <Button onClick = {this.zobrazit_udaje}>Moje údaje</Button>
 </FormGroup>
 </Form>
+<p id = "jmeno"></p>
+<p id = "vaha"></p>
+<p id = "vyska"></p>
     </Col>
   </Row>
 </Container>
@@ -152,5 +162,5 @@ render()
 }
 }
  
-  
+ 
 export default Nastaveni_aplikace;
