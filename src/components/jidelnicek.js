@@ -2,7 +2,10 @@
 import React from 'react';
 import { Form, Button, Col, Container, FormGroup } from 'react-bootstrap';
 import SaveDataPole from './PoleProUlozeni';
-import Forms from './Formulář_Jidelnicku';
+import {Forms,nacteniformulare} from './Formulář_Jidelnicku';
+
+
+
 
 import "./jidelnicek.css"
 
@@ -28,10 +31,11 @@ class Btn extends React.Component
   }
 
 
-  
-
  
-
+btn_dny()
+{
+  nacteniformulare();
+}
 
   button_pocet_dni()
   {
@@ -85,33 +89,35 @@ class Btn extends React.Component
             <Button onClick = {this.button_pocet_dni}>Načíst program</Button>
             <button_pocet_dni/>
             <div id="sedm" className = "sedm"   >
+            
               <FormGroup>
-              <button className = "button">1.den</button>{' '}
-              <button className = "button">2.den</button>{' '}
-              <button className = "button">3.den</button>{' '}
-              <button className = "button">4.den</button>{' '}
-              <button className = "button">5.den</button>{' '}
-              <button className = "button">6.den</button>{' '}
-              <button className = "button">7.den</button>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "1.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "2.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "3.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "4.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "5.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "6.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "7.den"/>{' '}
+              
               </FormGroup>
             </div>
 
             <div id="ctrnact" className = "ctrnact"   >
               <FormGroup>
-              <button className = "button">1.den</button>{' '}
-              <button className = "button">2.den</button>{' '}
-              <button className = "button">3.den</button>{' '}
-              <button className = "button">4.den</button>{' '}
-              <button className = "button">5.den</button>{' '}
-              <button className = "button">6.den</button>{' '}
-              <button className = "button">7.den</button>{' '}
-              <button className = "button">8.den</button>{' '}
-              <button className = "button">9.den</button>{' '}
-              <button className = "button">10.den</button>{' '}
-              <button className = "button">11.den</button>{' '}
-              <button className = "button">12.den</button>{' '}
-              <button className = "button">13.den</button>{' '}
-              <button className = "button">14.den</button>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "1.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "2.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "3.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "4.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "5.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "6.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "7.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "8.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "9.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "10.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "11.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "12.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "13.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "14.den"/>{' '}
               
               
               </FormGroup>
@@ -119,63 +125,65 @@ class Btn extends React.Component
             
             <div id="dvacetjedna" className = "dvacetjedna"   >
               <FormGroup>
-              <button className = "button">1.den</button>{' '}
-              <button className = "button">2.den</button>{' '}
-              <button className = "button">3.den</button>{' '}
-              <button className = "button">4.den</button>{' '}
-              <button className = "button">5.den</button>{' '}
-              <button className = "button">6.den</button>{' '}
-              <button className = "button">7.den</button>{' '}
-              <button className = "button">8.den</button>{' '}
-              <button className = "button">9.den</button>{' '}
-              <button className = "button">10.den</button>{' '}
-              <button className = "button">11.den</button>{' '}
-              <button className = "button">12.den</button>{' '}
-              <button className = "button">13.den</button>{' '}
-              <button className = "button">14.den</button>{' '}
-              <button className = "button">15.den</button>{' '}
-              <button className = "button">16.den</button>{' '}
-              <button className = "button">17.den</button>{' '}
-              <button className = "button">18.den</button>{' '}
-              <button className = "button">19.den</button>{' '}
-              <button className = "button">20.den</button>{' '}
-              <button className = "button">21.den</button>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "1.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "2.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "3.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "4.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "5.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "6.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "7.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "8.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "9.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "10.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "11.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "12.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "13.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "14.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "15.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "16.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "17.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "18.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "19.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "20.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "21.den"/>{' '}
               </FormGroup>
             </div>
 
             <div id="dvacetosm" className = "dvacetosm"   >
-            <button className = "button">1.den</button>{' '}
-              <button className = "button">2.den</button>{' '}
-              <button className = "button">3.den</button>{' '}
-              <button className = "button">4.den</button>{' '}
-              <button className = "button">5.den</button>{' '}
-              <button className = "button">6.den</button>{' '}
-              <button className = "button">7.den</button>{' '}
-              <button className = "button">8.den</button>{' '}
-              <button className = "button">9.den</button>{' '}
-              <button className = "button">10.den</button>{' '}
-              <button className = "button">11.den</button>{' '}
-              <button className = "button">12.den</button>{' '}
-              <button className = "button">13.den</button>{' '}
-              <button className = "button">14.den</button>{' '}
-              <button className = "button">15.den</button>{' '}
-              <button className = "button">16.den</button>{' '}
-              <button className = "button">17.den</button>{' '}
-              <button className = "button">18.den</button>{' '}
-              <button className = "button">19.den</button>{' '}
-              <button className = "button">20.den</button>{' '}
-              <button className = "button">21.den</button>{' '}
-              <button className = "button">22.den</button>{' '}
-              <button className = "button">23.den</button>{' '}
-              <button className = "button">24.den</button>{' '}
-              <button className = "button">25.den</button>{' '}
-              <button className = "button">26.den</button>{' '}
-              <button className = "button">27.den</button>{' '}
-              <button className = "button">28.den</button>{' '}
+           <FormGroup>
+           <input type = "button" onClick = {this.btn_dny}  className = "button" value = "1.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "2.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "3.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "4.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "5.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "6.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "7.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "8.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "9.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "10.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "11.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "12.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "13.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "14.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "15.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "16.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "17.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "18.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "19.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "20.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "21.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "22.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "23.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "24.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "25.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "26.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "27.den"/>{' '}
+              <input type = "button" onClick = {this.btn_dny}  className = "button" value = "28.den"/>{' '}
+          </FormGroup>
             </div>
             
-         
-            <Forms/>
+         <Forms/>
+            
           </Form>
           
           </Col>

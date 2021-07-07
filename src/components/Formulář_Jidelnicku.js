@@ -1,7 +1,15 @@
-import { Form, Button, FormGroup, Row, Col } from 'react-bootstrap';
+import { Form} from 'react-bootstrap';
 import React from 'react';
 import "./formular_jidelnicku.css";
+  var zobrazeni = document.getElementsByClassName("Formular")
+ function nacteniformulare()
+  {
     
+    zobrazeni[0].style.display = "block";
+    
+  }
+
+ 
 class Forms extends React.Component
 {
   constructor(props)
@@ -15,7 +23,10 @@ class Forms extends React.Component
       vecere:'',
       druhavecere:''
     }
+
   }
+  
+  
 
   render(){
     return(
@@ -88,4 +99,4 @@ class Forms extends React.Component
   }
 }
 
-export default Forms;
+export  {Forms, nacteniformulare};
