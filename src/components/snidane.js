@@ -1,6 +1,6 @@
 import React from "react";
 import { PoleJidelnicek } from "./PoleProUlozeni";
-let poleJidlenicek = PoleJidelnicek 
+
 
 
 
@@ -24,11 +24,11 @@ class Snidane extends React.Component{
 
      SaveForm()
     {
-      poleJidlenicek.push(this.state.snidane);
-      poleJidlenicek.push(this.state.snidane1);
-      poleJidlenicek.push(this.state.snidane2);
-      poleJidlenicek.push(this.state.snidane3);
-      poleJidlenicek.push(this.state.snidane4);
+      PoleJidelnicek.push(this.state.snidane);
+      PoleJidelnicek.push("2.položka snídaně" + this.state.snidane1);
+      PoleJidelnicek.push("3.položka snídaně" + this.state.snidane2);
+      PoleJidelnicek.push("4. položka snídaně" + this.state.snidane3);
+      PoleJidelnicek.push("5. položka snídaně" + this.state.snidane4);
     }
 
     changeSnidane1(value)
@@ -86,5 +86,5 @@ class Snidane extends React.Component{
       )
   }
 }
-export {Snidane};
+export default Snidane;
 

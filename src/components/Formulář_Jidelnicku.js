@@ -1,18 +1,22 @@
 import { Form} from 'react-bootstrap';
 import React from 'react';
 import "./formular_jidelnicku.css";
-import {Snidane} from './snidane';
+import Snidane from './snidane';
 import DopoledniSvacina from './dopolednisvacina';
 import Obed from './obed';
 import OdpoledniSvacina from './odpolednisvacina';
 import Vecere from './vecere';
 import DruhaVecere from './druhavecere';
 import { PoleJidelnicek } from './PoleProUlozeni';
+import Nastaveni_aplikace from './nastaveni_aplikace';
 
-let save = Snidane.SaveForm();
+let saveform = new Snidane;
+let dopsvaform = new DopoledniSvacina;
+
+
 
   var zobrazeni = document.getElementsByClassName("Formular");
-  let poleJidelnicek  = PoleJidelnicek
+  
  function nacteniformulare()
   {
     
@@ -36,7 +40,7 @@ class Forms extends React.Component
 
   zobrazit()
   {
-    document.getElementById("zobrazit").innerHTML = poleJidelnicek;
+    document.getElementById("zobrazit").innerHTML = PoleJidelnicek;
   }
   render(){
     return(
@@ -48,7 +52,8 @@ class Forms extends React.Component
         <OdpoledniSvacina/>
         <Vecere/>
         <DruhaVecere/>
-        <input onClick = {this.zobrazit, save} className = "buttonulozit" type = "button" value = "Uložit Jídelníček"/>
+        <input onClick = {saveform.SaveForm()} className = "buttonulozit" type = "button" value = "Uložit Jídelníček"/>
+        <input onClick = {this.zobrazit} type = "button" value ="zobrazit"/>
         <p id = "zobrazit"></p>
     </Form>
       </div>

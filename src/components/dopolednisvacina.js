@@ -1,4 +1,5 @@
 import React from "react";
+import { PoleJidelnicek } from "./PoleProUlozeni";
 
 class DopoledniSvacina extends React.Component{
     constructor(props)
@@ -16,6 +17,10 @@ class DopoledniSvacina extends React.Component{
     this.changeDopolednisvacina2= this.changeDopolednisvacina2.bind(this);
     this.changeDopolednisvacina3 = this.changeDopolednisvacina3.bind(this);
     this.changeDopolednisvacina4 = this.changeDopolednisvacina4.bind(this);
+    }
+
+    SaveFormDopSvacina(){
+      PoleJidelnicek.push(this.state.dopolednisvacina)
     }
 
     changeDopolednisvacina(value){

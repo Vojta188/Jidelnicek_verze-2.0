@@ -2,6 +2,6 @@
 
 const SaveDataPole = []
 
-const PoleJidelnicek = [  ['snidane'], ['dopolednisvacina'], ['obed'], ['odpolednisvacina'], ['vecere'], ['druhavecere'] ]
+const PoleJidelnicek = []
 
 export {SaveDataPole,PoleJidelnicek};
