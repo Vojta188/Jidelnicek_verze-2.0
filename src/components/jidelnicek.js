@@ -37,6 +37,9 @@ btn_dny()
   nacteniformulare();
 }
 
+
+
+
   button_pocet_dni()
   {
     

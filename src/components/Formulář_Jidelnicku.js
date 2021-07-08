@@ -1,14 +1,18 @@
 import { Form} from 'react-bootstrap';
 import React from 'react';
 import "./formular_jidelnicku.css";
-import Snidane from './snidane';
+import {Snidane} from './snidane';
 import DopoledniSvacina from './dopolednisvacina';
 import Obed from './obed';
 import OdpoledniSvacina from './odpolednisvacina';
 import Vecere from './vecere';
 import DruhaVecere from './druhavecere';
+import { PoleJidelnicek } from './PoleProUlozeni';
 
-  var zobrazeni = document.getElementsByClassName("Formular")
+let save = Snidane.SaveForm();
+
+  var zobrazeni = document.getElementsByClassName("Formular");
+  let poleJidelnicek  = PoleJidelnicek
  function nacteniformulare()
   {
     
@@ -24,44 +28,29 @@ class Forms extends React.Component
     super(props)
     this.state =  {
        
-      druhavecere:''
     }
     
-    this.changeDruhavecere = this.changeDruhavecere.bind(this);
-
   }
  
-  changeDruhavecere(value)
+  
+
+  zobrazit()
   {
-    this.setState({
-      druhavecere:value
-    })
+    document.getElementById("zobrazit").innerHTML = poleJidelnicek;
   }
-
-  onSubmitSaveForm(e){
-
-  }
-
   render(){
     return(
       <div id = "Formular" className = "Formular">
-      <Form onSubmit ={this.onSubmitSaveForm} >
+      <Form>
         <Snidane/>
-
         <DopoledniSvacina/>
-
         <Obed/>
-
         <OdpoledniSvacina/>
-        
-
         <Vecere/>
-
         <DruhaVecere/>
-
-        <button className = "buttonulozit">Uložit Jídelníček</button>
-
-      </Form>
+        <input onClick = {this.zobrazit, save} className = "buttonulozit" type = "button" value = "Uložit Jídelníček"/>
+        <p id = "zobrazit"></p>
+    </Form>
       </div>
 
     )

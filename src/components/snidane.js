@@ -1,4 +1,9 @@
 import React from "react";
+import { PoleJidelnicek } from "./PoleProUlozeni";
+let poleJidlenicek = PoleJidelnicek 
+
+
+
 
 class Snidane extends React.Component{
     constructor(props){
@@ -16,6 +21,16 @@ class Snidane extends React.Component{
     this.changeSnidane3= this.changeSnidane3.bind(this);
     this.changeSnidane4= this.changeSnidane4.bind(this);
     }
+
+     SaveForm()
+    {
+      poleJidlenicek.push(this.state.snidane);
+      poleJidlenicek.push(this.state.snidane1);
+      poleJidlenicek.push(this.state.snidane2);
+      poleJidlenicek.push(this.state.snidane3);
+      poleJidlenicek.push(this.state.snidane4);
+    }
+
     changeSnidane1(value)
   {
     this.setState({
@@ -38,6 +53,8 @@ class Snidane extends React.Component{
       snidane2:value
     })
   }
+
+
 
   changeSnidane3(value)
   {
@@ -69,5 +86,5 @@ class Snidane extends React.Component{
       )
   }
 }
-export default Snidane;
+export {Snidane};
 
