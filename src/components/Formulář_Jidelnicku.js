@@ -1,6 +1,13 @@
 import { Form} from 'react-bootstrap';
 import React from 'react';
 import "./formular_jidelnicku.css";
+import Snidane from './snidane';
+import DopoledniSvacina from './dopolednisvacina';
+import Obed from './obed';
+import OdpoledniSvacina from './odpolednisvacina';
+import Vecere from './vecere';
+import DruhaVecere from './druhavecere';
+
   var zobrazeni = document.getElementsByClassName("Formular")
  function nacteniformulare()
   {
@@ -16,79 +23,41 @@ class Forms extends React.Component
   {
     super(props)
     this.state =  {
-      snidane: '',
-      dopolednisvacina:'',
-      obed:'',
-      odpolednisvacina:'',
-      vecere:'',
+       
       druhavecere:''
     }
+    
+    this.changeDruhavecere = this.changeDruhavecere.bind(this);
 
   }
-  
-  
+ 
+  changeDruhavecere(value)
+  {
+    this.setState({
+      druhavecere:value
+    })
+  }
+
+  onSubmitSaveForm(e){
+
+  }
 
   render(){
     return(
       <div id = "Formular" className = "Formular">
-      <Form>
-        <div className = "snidane">
-        <label className = "snidane">Snídaně</label><br></br>
-        <input/>{' '}
+      <Form onSubmit ={this.onSubmitSaveForm} >
+        <Snidane/>
+
+        <DopoledniSvacina/>
+
+        <Obed/>
+
+        <OdpoledniSvacina/>
         
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        </div>
 
-        <div className = "divdopolednisvacina">
-          <label className = "labeldopolednisvacina">Dopolední Svačina</label><br></br>
-          <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        </div>
+        <Vecere/>
 
-
-        <div className = "divobed">
-          <label className = "labelobed">Oběd</label><br></br>
-          <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        </div>
-
-
-        <div className = "divodpolednisvacina">
-          <label className = "labelodpolednisvacina">Odpolední Svačina</label><br></br>
-          <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        </div>
-
-
-        <div className = "divvecere">
-          <label className = "labelvecere">Večeře</label><br></br>
-          <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        </div>
-
-        <div className = "divdruhavecere">
-          <label className = "labeldruhavecere">Druhá Večeře</label><br></br>
-          <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        <input/>{' '}
-        </div>
+        <DruhaVecere/>
 
         <button className = "buttonulozit">Uložit Jídelníček</button>
 

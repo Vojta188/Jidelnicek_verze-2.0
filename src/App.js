@@ -4,11 +4,14 @@ import Btn from './components/jidelnicek';
 
 function App() {
   return (
-    <div>
+    
+    <div className = "color">
+      <h2> Jídelníček</h2>
       <Nastaveni_aplikace/>
       <Btn/>
       
     </div>
+    
   );
 }
 

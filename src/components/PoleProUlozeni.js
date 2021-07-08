@@ -2,4 +2,6 @@
 
 const SaveDataPole = []
 
-export default SaveDataPole;
+const PoleJidelnicek = [  ['snidane'], ['dopolednisvacina'], ['obed'], ['odpolednisvacina'], ['vecere'], ['druhavecere'] ]
+
+export {SaveDataPole,PoleJidelnicek};

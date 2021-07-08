@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Form, Button, Col, Container, FormGroup } from 'react-bootstrap';
-import SaveDataPole from './PoleProUlozeni';
+import {SaveDataPole} from './PoleProUlozeni';
 import {Forms,nacteniformulare} from './Formulář_Jidelnicku';
 
 
