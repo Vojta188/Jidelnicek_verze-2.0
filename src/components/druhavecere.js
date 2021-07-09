@@ -14,7 +14,8 @@ class DruhaVecere extends React.Component{
         this.changeDruhavecere1 = this.changeDruhavecere1.bind(this);
         this.changeDruhavecere2 = this.changeDruhavecere2.bind(this);
         this.changeDruhavecere3 = this.changeDruhavecere3.bind(this);
-        this.changeDruhavecere4 = this.changeDruhavecere4.bind(this);
+        this.changeDruhavecere4 = this.changeDruhavecere4.bind(this)
+        
     }
     changeDruhavecere(value)
   {
