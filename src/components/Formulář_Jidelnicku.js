@@ -32,7 +32,7 @@ class Forms extends React.Component
   
   zobrazit()
   {
-    document.getElementById("zobrazit").innerHTML = saveform.state.snidane3;
+    document.getElementById("zobrazit").innerHTML = PoleJidelnicek;
   }
   render(){
     return(

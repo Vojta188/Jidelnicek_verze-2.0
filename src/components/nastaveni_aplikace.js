@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Form, Button, FormGroup } from 'react-bootstrap';
 import './jidelnicek.css';
 import {SaveDataPole} from './PoleProUlozeni';
+import{PoleJidelnicek} from './PoleProUlozeni'
 
 
   
@@ -97,6 +98,7 @@ zobrazit_udaje()
     alert("Vyplnte dotaznik")
   }
 }
+
 
     e.preventDefault();
     
