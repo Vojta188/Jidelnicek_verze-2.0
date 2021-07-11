@@ -7,7 +7,7 @@ import Obed from './obed';
 import OdpoledniSvacina from './odpolednisvacina';
 import Vecere from './vecere';
 import DruhaVecere from './druhavecere';
-import { PoleJidelnicek } from './PoleProUlozeni';
+import { PoleJidelnicek, UlozitDopole } from './PoleProUlozeni';
  
 let saveform = new Snidane();
   var zobrazeni = document.getElementsByClassName("Formular");
@@ -33,6 +33,7 @@ class Forms extends React.Component
   zobrazit()
   {
     document.getElementById("zobrazit").innerHTML = PoleJidelnicek;
+    document.getElementById("zobrazit1").innerHTML = UlozitDopole;
   }
   render(){
     return(
@@ -50,6 +51,7 @@ class Forms extends React.Component
     </Form>
     <input onClick = {this.zobrazit} type = "button" value ="zobrazit"/>
         <p id = "zobrazit"></p>
+        <p id = "zobrazit1"></p>
       </div>
 
     )
