@@ -221,11 +221,11 @@ changedruhavecere5(value)
   event.preventDefault(); 
    alert("Uloženo" + this.state.snidane1);
 PoleJidelnicek[0][1].push(this.state.snidane1, this.state.snidane2,this.state.snidane3,this.state.snidane4,this.state.snidane5);
-PoleJidelnicek[1][1].push(this.state.dopolednisvacina1, this.state.dopolednisvacina2, this.state.dopolednisvacina3,this.state.dopolednisvacina4,this.state.dopolednisvacina5);
-PoleJidelnicek[2][1].push(this.state.obed1, this.state.obed2, this.state.obed3, this.state.obed4, this.state.obed5); 
-PoleJidelnicek[3][1].push(this.state.odpolednisvacina1, this.state.odpolednisvacina2,this.state.odpolednisvacina3,this.state.odpolednisvacina4,this.state.odpolednisvacina5);
-PoleJidelnicek[4][1].push(this.state.vecere1,this.state.vecere2,this.state.vecere3,this.state.vecere4,this.state.vecere5);
-PoleJidelnicek[5][1].push(this.state.druhavecere1,this.state.druhavecere2,this.state.druhavecere3,this.state.druhavecere4,this.state.druhavecere5);
+PoleJidelnicek[1][0].push(this.state.dopolednisvacina1, this.state.dopolednisvacina2, this.state.dopolednisvacina3,this.state.dopolednisvacina4,this.state.dopolednisvacina5);
+PoleJidelnicek[2][0].push(this.state.obed1, this.state.obed2, this.state.obed3, this.state.obed4, this.state.obed5); 
+PoleJidelnicek[3][0].push(this.state.odpolednisvacina1, this.state.odpolednisvacina2,this.state.odpolednisvacina3,this.state.odpolednisvacina4,this.state.odpolednisvacina5);
+PoleJidelnicek[4][0].push(this.state.vecere1,this.state.vecere2,this.state.vecere3,this.state.vecere4,this.state.vecere5);
+PoleJidelnicek[5][0].push(this.state.druhavecere1,this.state.druhavecere2,this.state.druhavecere3,this.state.druhavecere4,this.state.druhavecere5);
 
  }
   

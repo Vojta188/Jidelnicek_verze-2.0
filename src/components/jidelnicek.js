@@ -39,162 +39,189 @@ prvniden()
 druhyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("2.den");
+  PoleJidelnicek[0][0].push("2.den");
+  Pole();
 }
 
 tretiden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("3.den");
+  PoleJidelnicek[0][0].push("3.den");
+  Pole()
 }
 
 ctvrtyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("4.den");
+  PoleJidelnicek[0][0].push("4.den");
+  Pole()
 }
 
 patyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("5.den");
+  PoleJidelnicek[0][0].push("5.den");
+  Pole()
 }
 
 sestyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("6.den");
+  PoleJidelnicek[0][0].push("6.den");
+  Pole()
 }
 
 sedmyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("7.den");
+  PoleJidelnicek[0][0].push("7.den");
+  Pole()
 }
 
 osmyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("8.den");
+  PoleJidelnicek[0][0].push("8.den");
+  Pole()
 }
 
 devatyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("9.den");
+  PoleJidelnicek[0][0].push("9.den");
+  Pole()
 }
 
 desatyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("10.den");
+  PoleJidelnicek[0][0].push("10.den");
+  Pole()
 }
 
 jedenactyden(){
   formular.nacteniformulare();
-  PoleJidelnicek.push("11.den");
+  PoleJidelnicek[0][0].push("11.den");
+  Pole()
 }
 
 dvanactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("12.den")
+  PoleJidelnicek[0][0].push("12.den")
+  Pole()
 }
 
 trinactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("13.den");
+  PoleJidelnicek[0][0].push("13.den");
+  Pole()
 }
 
 ctrnactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("14.den");
+  PoleJidelnicek[0][0].push("14.den");
+  Pole()
 }
 
 patnactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("15.den");
+  PoleJidelnicek[0][0].push("15.den");
+  Pole()
 }
 
 sestnactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("16.den");
+  PoleJidelnicek[0][0].push("16.den");
+  Pole()
 }
 
 sedmnactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("17.den")
+  PoleJidelnicek[0][0].push("17.den")
+  Pole()
 }
 
 osmnactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("18.den");
+  PoleJidelnicek[0][0].push("18.den");
+  Pole()
 }
 
 devatenactyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("19.den");
+  PoleJidelnicek[0][0].push("19.den");
+  Pole()
 }
 
 dvacatyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("20.den");
+  PoleJidelnicek[0][0].push("20.den");
+  Pole()
 }
 
 dvacatyprvniden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("21.den");
+  PoleJidelnicek[0][0].push("21.den");
+  Pole()
 }
 
 dvacatydruhyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("22.den");
+  PoleJidelnicek[0][0].push("22.den");
+  Pole()
 }
 
 dvacatytretiden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("23.den");
+  PoleJidelnicek[0][0].push("23.den");
+  Pole()
 }
 
 dvacatyctvrtyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("24.den");
+  PoleJidelnicek[0][0].push("24.den");
+  Pole()
 }
 
 dvacatypatyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("25.den");
+  PoleJidelnicek[0][0].push("25.den");
+  Pole()
 }
 dvacatysestyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("26.den");
+  PoleJidelnicek[0][0].push("26.den");
+  Pole()
 
 }
 
 dvacatysedmyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("27.den");
+  PoleJidelnicek[0][0].push("27.den");
+  Pole()
 }
 
 dvacatyosmyden()
 {
   formular.nacteniformulare();
-  PoleJidelnicek.push("28.den");
+  PoleJidelnicek[0][0].push("28.den");
+  Pole()
 }
 
 

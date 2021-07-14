@@ -40,3 +40,10 @@ label
   {
       display: none;
   }
+
+  p
+  {
+    font-size: 20px;
+    color: brown;
+    font-weight: bold;
+  }
