@@ -3,7 +3,7 @@ import React from 'react';
 import { Form, Button, Col, Container, FormGroup } from 'react-bootstrap';
 import {SaveDataPole} from './PoleProUlozeni';
 import {Forms} from './Formulář_Jidelnicku';
-import { PoleJidelnicek } from './PoleProUlozeni';
+import { PoleJidelnicek, PoleSave} from './PoleProUlozeni';
 import { Pole } from './PoleProUlozeni';
 
 import "./jidelnicek.css"
@@ -33,180 +33,187 @@ prvniden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("1.den");
-  Pole()
+  document.getElementById("day").innerHTML = "1.den";
+  
 }
 
 druhyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("2.den");
-  Pole();
+  document.getElementById("day").innerHTML = "2.den";
+  
 }
 
 tretiden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("3.den");
-  Pole()
+  document.getElementById("day").innerHTML = "3.den"
 }
 
 ctvrtyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("4.den");
-  Pole()
+  document.getElementById("day").innerHTML = "4.den"
+  
 }
 
 patyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("5.den");
-  Pole()
+  document.getElementById("day").innerHTML = "5.den"
 }
 
 sestyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("6.den");
-  Pole()
+  document.getElementById("day").innerHTML = "6.den"
+  
 }
 
 sedmyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("7.den");
-  Pole()
+  document.getElementById("day").innerHTML = "7.den"
+  
 }
 
 osmyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("8.den");
-  Pole()
+  document.getElementById("day").innerHTML = "8.den"
 }
 
 devatyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("9.den");
-  Pole()
+  document.getElementById("day").innerHTML  = "9.den"
 }
 
 desatyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("10.den");
-  Pole()
+  document.getElementById("day").innerHTML = "10.den"
+  
 }
 
 jedenactyden(){
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("11.den");
-  Pole()
+  document.getElementById("day").innerHTML = "11.den"
 }
 
 dvanactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("12.den")
-  Pole()
+  document.getElementById("day").innerHTML = "12.den"
 }
 
 trinactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("13.den");
-  Pole()
+  document.getElementById("day").innerHTML = "13.den"
+  
 }
 
 ctrnactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("14.den");
-  Pole()
+  document.getElementById("day").innerHTML ="14.den"
 }
 
 patnactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("15.den");
-  Pole()
+  document.getElementById("day").innerHTML ="15.den"
 }
 
 sestnactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("16.den");
-  Pole()
+  document.getElementById("day").innerHTML ="16.den"
 }
 
 sedmnactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("17.den")
-  Pole()
+  document.getElementById("day").innerHTML ="17.den"
 }
 
 osmnactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("18.den");
-  Pole()
+  document.getElementById("day").innerHTML ="18.den"
 }
 
 devatenactyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("19.den");
-  Pole()
+  document.getElementById("day").innerHTML ="19.den"
 }
 
 dvacatyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("20.den");
-  Pole()
+  document.getElementById("day").innerHTML ="20.den"
 }
 
 dvacatyprvniden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("21.den");
-  Pole()
+  document.getElementById("day").innerHTML ="21.den"
 }
 
 dvacatydruhyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("22.den");
-  Pole()
+  document.getElementById("day").innerHTML ="22.den"
 }
 
 dvacatytretiden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("23.den");
-  Pole()
+  document.getElementById("day").innerHTML ="23.den"
 }
 
 dvacatyctvrtyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("24.den");
-  Pole()
+  document.getElementById("day").innerHTML ="24.den"
 }
 
 dvacatypatyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("25.den");
-  Pole()
+  document.getElementById("day").innerHTML ="25.den"  
 }
 dvacatysestyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("26.den");
-  Pole()
+  document.getElementById("day").innerHTML="26.den"
 
 }
 
@@ -214,14 +221,15 @@ dvacatysedmyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("27.den");
-  Pole()
+  document.getElementById("day").innerHTML ="27den"
+
 }
 
 dvacatyosmyden()
 {
   formular.nacteniformulare();
   PoleJidelnicek[0][0].push("28.den");
-  Pole()
+  document.getElementById("day").innerHTML ="28.den"  
 }
 
 
@@ -368,8 +376,9 @@ dvacatyosmyden()
               <input type = "button" onClick = {this.btn_dny}  className = "button" value = "27.den"/>{' '}
               <input type = "button" onClick = {this.btn_dny}  className = "button" value = "28.den"/>{' '}
           </FormGroup>
+          
             </div>
-            
+            <p id = "day" className = "day"></p>  
          <Forms/>
             
           </Form>

@@ -1,8 +1,8 @@
 import React from 'react';
 import "./formular_jidelnicku.css";
 
-import { PoleJidelnicek, UlozitDopole } from './PoleProUlozeni';
- 
+import { PoleJidelnicek, UlozitDopole, Pole } from './PoleProUlozeni';
+
 
 
 
@@ -227,11 +227,14 @@ PoleJidelnicek[3][0].push(this.state.odpolednisvacina1, this.state.odpolednisvac
 PoleJidelnicek[4][0].push(this.state.vecere1,this.state.vecere2,this.state.vecere3,this.state.vecere4,this.state.vecere5);
 PoleJidelnicek[5][0].push(this.state.druhavecere1,this.state.druhavecere2,this.state.druhavecere3,this.state.druhavecere4,this.state.druhavecere5);
 
+Pole()
+
+
  }
   
   zobrazit()
   {
-    document.getElementById("zobrazit").innerHTML = PoleJidelnicek;
+    document.getElementById("zobrazit").innerHTML = "Pes";
     document.getElementById("zobrazit1").innerHTML = UlozitDopole;
   }
 
@@ -311,11 +314,11 @@ PoleJidelnicek[5][0].push(this.state.druhavecere1,this.state.druhavecere2,this.s
           <input type = "text" onChange = { e => this.changedruhavecere4(e.target.value)} value = {this.state.druhavecere4}/>
           <input type = "text" onChange = { e => this.changedruhavecere5(e.target.value)} value = {this.state.druhavecere5}/>
         </div>      
-        <input type="button" onClick = {this.handleSubmit}  value="Uložit"/> 
+        
+      
     </form>
-
-    
-    <input type = "button" onClick = {this.zobrazit} value ="zobrazit"/>
+    <input type="button" onClick = {this.handleSubmit} value="Uložit jídelníček"/> 
+        <input type = "button" onClick = {this.zobrazit} value ="zobrazit"/>
         <p id = "zobrazit"></p>
         <p id = "zobrazit1"></p>
       </div>
